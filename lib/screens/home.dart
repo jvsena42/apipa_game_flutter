@@ -1,5 +1,6 @@
 import 'package:apipa_game_flutter/components/buttons.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -23,7 +24,9 @@ class _HomeState extends State<Home> {
               ),
               NormalButton(
                   label: 'Seja um doador',
-                  onPress: (){}
+                  onPress: (){
+                    _launchURL();
+                  }
               ),
               NormalButton(
                   label: 'Jogar',
@@ -36,5 +39,14 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
+  }
+
+  _launchURL() async {
+    const url = 'https://www.apipapiaui.org/doe';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
