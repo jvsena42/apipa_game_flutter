@@ -1,6 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.rhcampos.apipa_game_flutter">
-   <application
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <queries>
+        <!-- If your app opens https URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
         android:label="apipa_game_flutter"
         android:icon="@mipmap/ic_launcher">
         <activity
