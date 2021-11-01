@@ -6,14 +6,13 @@ import 'package:apipa_game_flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class GamePage extends StatefulWidget {
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _GamePageState createState() => _GamePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _GamePageState extends State<GamePage> {
   //Dog Variables
   double dogX = 0.0;
   double dogY = 1.0;
