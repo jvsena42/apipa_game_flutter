@@ -1,4 +1,5 @@
 import 'package:apipa_game_flutter/components/buttons.dart';
+import 'package:apipa_game_flutter/components/image.dart';
 import 'package:apipa_game_flutter/constants/colors.dart';
 import 'package:apipa_game_flutter/constants/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -24,37 +25,68 @@ class _CreditsState extends State<Credits> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              width: 180,
-              height: 180,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                    image: AssetImage('assets/images/jv.jpg'),
-                    fit: BoxFit.fill),
-              ),
+            ImageCircle(
+              imageRef: 'assets/images/jv.jpg',
             ),
             Text(
-              'João Victor',
+              'João Victor Sena',
               style: kInfoStyle,
             ),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ButtonImage(
-                      url: 'https://www.linkedin.com/in/jvsena42/',
-                      imgRef: 'assets/images/ic_linkedin.svg',
-                    ),
+                  ButtonImage(
+                    url: 'https://www.linkedin.com/in/jvsena42/',
+                    imgRef: 'assets/images/ic_linkedin.svg',
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ButtonImage(
-                      url: 'https://www.instagram.com/jvsena42/',
-                      imgRef: 'assets/images/ic_instagram.svg',
-                    ),
+                  ButtonImage(
+                    url: 'https://www.instagram.com/jvsena42/',
+                    imgRef: 'assets/images/ic_instagram.svg',
+                  ),
+                ],
+              ),
+            ),
+            ImageCircle(
+              imageRef: 'assets/images/renatho.jpg',
+            ),
+            Text(
+              'Renatho Henrique',
+              style: kInfoStyle,
+            ),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ButtonImage(
+                    url: 'https://www.linkedin.com/in/renathohcc/',
+                    imgRef: 'assets/images/ic_linkedin.svg',
+                  ),
+                  ButtonImage(
+                    url: 'https://www.instagram.com/renathohcc/',
+                    imgRef: 'assets/images/ic_instagram.svg',
+                  ),
+                ],
+              ),
+            ),
+            ImageCircle(
+              imageRef: 'assets/images/luana.jpg',
+            ),
+            Text(
+              'Luana Reis',
+              style: kInfoStyle,
+            ),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ButtonImage(
+                    url: 'https://www.linkedin.com/in/luanareis9/',
+                    imgRef: 'assets/images/ic_linkedin.svg',
+                  ),
+                  ButtonImage(
+                    url: 'https://www.instagram.com/lu_reis9/',
+                    imgRef: 'assets/images/ic_instagram.svg',
                   ),
                 ],
               ),

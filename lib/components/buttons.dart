@@ -27,14 +27,17 @@ class ButtonImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        _launchURL(url.toString());
-      },
-      child: SvgPicture.asset(
-        imgRef,
-        width: 40.0,
-        height: 40.0,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: GestureDetector(
+        onTap: () {
+          _launchURL(url.toString());
+        },
+        child: SvgPicture.asset(
+          imgRef,
+          width: 40.0,
+          height: 40.0,
+        ),
       ),
     );
   }
