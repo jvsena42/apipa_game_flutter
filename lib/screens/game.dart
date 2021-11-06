@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:apipa_game_flutter/elements/dog.dart';
 import 'package:apipa_game_flutter/elements/obstacle.dart';
-import 'package:apipa_game_flutter/material.dart';
+import 'package:apipa_game_flutter/constants/text_styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -108,7 +108,7 @@ class _GamePageState extends State<GamePage> {
                           child: isGameRunning
                               ? const Text('')
                               : const Text('T A P  T O  P L A Y',
-                                  style: defaultStyle)),
+                                  style: kDefaultStyle)),
                       MyDog(
                         dogX: dogX,
                         dogY: dogY,
@@ -138,11 +138,11 @@ class _GamePageState extends State<GamePage> {
                             children: const <Widget>[
                               Text(
                                 'SCORE',
-                                style: infoStyles,
+                                style: kInfoStyle,
                               ),
                               Text(
                                 '20',
-                                style: infoStyles,
+                                style: kInfoStyle,
                               ),
                             ],
                           ),
@@ -151,11 +151,11 @@ class _GamePageState extends State<GamePage> {
                             children: const <Widget>[
                               Text(
                                 'BEST',
-                                style: infoStyles,
+                                style: kInfoStyle,
                               ),
                               Text(
                                 '45',
-                                style: infoStyles,
+                                style: kInfoStyle,
                               ),
                             ],
                           ),

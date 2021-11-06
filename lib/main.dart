@@ -1,4 +1,5 @@
 import 'package:apipa_game_flutter/constants/colors.dart';
+import 'package:apipa_game_flutter/screens/credits_page.dart';
 import 'package:apipa_game_flutter/screens/game.dart';
 import 'package:apipa_game_flutter/screens/home.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       initialRoute: 'home',
       routes: {
         'home': (context) => Home(),
-        'game': (context) => GamePage()
+        'game': (context) => GamePage(),
+        'credits': (context) => Credits(),
       },
     );
   }

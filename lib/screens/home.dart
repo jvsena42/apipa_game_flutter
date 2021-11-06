@@ -20,7 +20,9 @@ class _HomeState extends State<Home> {
             children: [
               NormalButton(
                 label: 'Créditos',
-                onPress: (){}
+                  onPress: (){
+                    Navigator.pushNamed(context, 'credits');
+                  }
               ),
               NormalButton(
                   label: 'Seja um doador',
