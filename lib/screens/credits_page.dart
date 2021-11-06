@@ -1,6 +1,8 @@
+import 'package:apipa_game_flutter/components/buttons.dart';
 import 'package:apipa_game_flutter/constants/colors.dart';
 import 'package:apipa_game_flutter/constants/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Credits extends StatefulWidget {
   @override
@@ -23,21 +25,40 @@ class _CreditsState extends State<Credits> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 200,
-              height: 200,
+              width: 180,
+              height: 180,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
                     image: AssetImage('assets/images/jv.jpg'),
-                    fit: BoxFit.fill
-                ),
+                    fit: BoxFit.fill),
               ),
             ),
             Text(
-                'João Victor',
+              'João Victor',
               style: kInfoStyle,
             ),
-            Row()
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ButtonImage(
+                      url: 'https://www.linkedin.com/in/jvsena42/',
+                      imgRef: 'assets/images/ic_linkedin.svg',
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ButtonImage(
+                      url: 'https://www.instagram.com/jvsena42/',
+                      imgRef: 'assets/images/ic_instagram.svg',
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
