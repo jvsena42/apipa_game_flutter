@@ -1,3 +1,4 @@
+import 'package:apipa_game_flutter/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -6,12 +7,14 @@ class NormalButton extends StatelessWidget {
 
   final String label;
   final void Function()? onPress;
+  final Color? color;
 
-  NormalButton({required this.label, this.onPress});
+  NormalButton({required this.label, this.color, this.onPress});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(color ?? kGreen)),
       onPressed: onPress,
       child: Text(label),
     );
