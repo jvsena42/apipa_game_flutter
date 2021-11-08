@@ -1,4 +1,5 @@
 import 'package:apipa_game_flutter/components/buttons.dart';
+import 'package:apipa_game_flutter/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -32,6 +33,7 @@ class _HomeState extends State<Home> {
               ),
               NormalButton(
                   label: 'Jogar',
+                  color: kBlue,
                   onPress: (){
                     Navigator.pushNamed(context, 'game');
                   }

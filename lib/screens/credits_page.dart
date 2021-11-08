@@ -15,7 +15,7 @@ class _CreditsState extends State<Credits> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Este Jogo foi criado por'),
+        title: Text('Este jogo foi criado por'),
         centerTitle: true,
         backgroundColor: kDarkYellow,
         elevation: 0,
