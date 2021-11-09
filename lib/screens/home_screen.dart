@@ -1,9 +1,14 @@
 import 'package:apipa_game_flutter/components/buttons.dart';
 import 'package:apipa_game_flutter/constants/colors.dart';
+import 'package:apipa_game_flutter/screens/credits_screen.dart';
+import 'package:apipa_game_flutter/screens/game_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatefulWidget {
+
+  static const String id = "home";
+
   @override
   _HomeState createState() => _HomeState();
 }
@@ -22,7 +27,7 @@ class _HomeState extends State<Home> {
               NormalButton(
                 label: 'Créditos',
                   onPress: (){
-                    Navigator.pushNamed(context, 'credits');
+                    Navigator.pushNamed(context, Credits.id);
                   }
               ),
               NormalButton(
@@ -35,7 +40,7 @@ class _HomeState extends State<Home> {
                   label: 'Jogar',
                   color: kBlue,
                   onPress: (){
-                    Navigator.pushNamed(context, 'game');
+                    Navigator.pushNamed(context, GamePage.id);
                   }
               ),
             ],
