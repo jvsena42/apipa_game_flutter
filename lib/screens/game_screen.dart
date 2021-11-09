@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 
 class GamePage extends StatefulWidget {
 
+  static const String id = "gamepage";
+
   @override
   _GamePageState createState() => _GamePageState();
 }

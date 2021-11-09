@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Credits extends StatefulWidget {
+
+  static const String id = "credits";
+
   @override
   _CreditsState createState() => _CreditsState();
 }
