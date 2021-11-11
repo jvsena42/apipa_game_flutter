@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme.light(primary: kGreen),
         scaffoldBackgroundColor: kDarkYellow,
       ),
-      initialRoute: 'home',
+      initialRoute: Home.id,
       routes: {
         Home.id: (context) => Home(),
         GamePage.id: (context) => GamePage(),
